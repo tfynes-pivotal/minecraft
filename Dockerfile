@@ -21,7 +21,7 @@ WORKDIR /data
 VOLUME /data
 
 # Expose the container's network port: 25565 during runtime.
-EXPOSE 25565
+EXPOSE 8080
 
 #Automatically accept Minecraft EULA, and start Minecraft server
 CMD echo eula=true > /data/eula.txt && java -jar /minecraft_server.1.8.7.jar
